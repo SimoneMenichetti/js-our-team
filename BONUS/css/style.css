@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     font-family: "Nunito", sans-serif;
+    color: #635D56;
 }
 body{
     background-color: #EBEBE7;
@@ -14,7 +15,6 @@ body{
     text-align: center;
     margin-bottom: 50px;
     font-size: small;
-    color: #2A2A2A;
     padding-top: 30px;
 }
 
@@ -44,17 +44,21 @@ body{
    
    
 }
-.card span {
-    margin: 5px 0;
+.card span h3 {
     display: block;
-    
-    
-   
 }
+
 .card img {
     max-width: 300px;
    
-  
+}
+
+.card h3{
+    font-size:15px;
+}
+
+.card span{
+    font-size: smaller;
 }
 
 .text-container{

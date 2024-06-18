@@ -62,7 +62,7 @@
             // Trasformare la stringa dell immagine in un immagine effettiva 
                 `<div class="text-container">
                     <img src="${membro.foto}" alt="Foto di ${membro.nome}">
-                    <span> ${ membro.nome}</span>
+                    <h3> ${ membro.nome}</h3>
                     <span> ${ membro.ruolo}</span>
                 </div>`;
                 
