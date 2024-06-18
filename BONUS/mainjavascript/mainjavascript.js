@@ -9,71 +9,73 @@
         {
             nome: "Wayne Barnet",
             ruolo: "Founder & Ceo",
-            foto: "wayne-barnet-founder-ceo.jpg"
+            foto: "./img/wayne-barnett-founder-ceo.jpg"
         },
 
         {
             nome: "Angela Caroll",
             ruolo: "Chief Editor",
-            foto: "angela-caroll-chief-editor.jpg"
+            foto: "./img/angela-caroll-chief-editor.jpg"
         },
 
         {
             nome: "Walter Gordon",
             ruolo: "Office Manager",
-            foto: "walter-gordon-office-manager.jpg"
+            foto: "./img/walter-gordon-office-manager.jpg"
         },
 
         {
             nome: "Angela Lopez",
             ruolo: "Social Media Manager",
-            foto: "angela-lopez-social-media-manager.jpg"
+            foto: "./img/angela-lopez-social-media-manager.jpg"
         },
 
         {
             nome: "Scott Estrada",
             ruolo: "Developer",
-            foto: "scott-estrada-developer.jpg"
+            foto: "./img/scott-estrada-developer.jpg"
         },
 
         {
             nome: "Barbara Ramos",
             ruolo: "Graphic Designer",
-            foto: "barbara-ramos-graphic-designer.jpg"
+            foto: "./img/barbara-ramos-graphic-designer.jpg"
         },
     ];
         // verifica oggetti inseriti nell'array
             console.log(membriTeam);
 
-                        //         MILESTONE 1:
-
-    // Stampare su console, per ogni membro del team, le informazioni di nome, ruolo e la stringa della foto
-
-
-    // utilizziamo un ciclo for per iterare nell'array creato in precedenza per i membri e stampare le informazioni di ogni membro del team 
-
-    // [* miles 2 p1]
+    
         const teamContainer = document.getElementById('team-container');
 
         for(let i = 0 ; i< membriTeam.length;i++) {
-            // verifichiamo in console le informazioni per ogni membro
-            // console.log(`nome: ${membriTeam[i].nome}`);
-            // console.log(`ruolo: ${membriTeam[i].ruolo}`);
-            // console.log(`foto: ${membriTeam[i].foto}`);
+            // [*BONUS p2]
+            const membro = membriTeam[i];
 
-            // [* miles 2 p2]
-                const elementoMembro= document.createElement('div');
-                elementoMembro.innerHTML = `
-                <span>Nome: ${membriTeam[i].nome}</span>
-                <span>Ruolo: ${membriTeam[i].ruolo}</span>
-                <span>Foto: ${membriTeam[i].foto}</span>`;
+            // [*BONUS p3]
+
+            const cardMembro = document.createElement("div");
+
+            cardMembro.classList.add('card');
+
+            cardMembro.innerHTML = 
+            // Trasformare la stringa dell immagine in un immagine effettiva 
+            `
+            <img src="${membro.foto}" alt="Foto di ${membro.nome}">
+            <div></strong> ${membro.nome}</div>
+            <div>${membro.ruolo}</div>`;
                 
-                // [* miles 2 p3]
-                teamContainer.append(elementoMembro);
+                // [*BONUS p4]
+                teamContainer.append(cardMembro);
         }
         
 
 
                     //         MILESTONE BONUS:
+                     // Trasformare la stringa dell immagine in un immagine effettiva 
+        // creazione const per iterare nell array le informazioni dell elemento [*BONUS p2]
+        // creazione dell elemento card ed inseriamo le proprieta le oggetto al suo interno [*BONUS p3]
+        // appendiamo le card create dinamicamente [*BONUS p4]
 
-        // Trasformare la stringa dell immagine in un immagine effettiva 
+       
+
