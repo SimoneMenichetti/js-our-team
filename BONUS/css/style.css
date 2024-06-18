@@ -4,7 +4,7 @@
     padding: 0;
 }
 body{
-    background-color: #F5F5F1;
+    background-color: #EBEBE7;
 }
 
 /* regole header */
@@ -12,10 +12,11 @@ body{
 .title{
     text-align: center;
     margin-bottom: 50px;
+    color: #2A2A2A;
 }
 
  .subparagraph{
-    margin-top: 20px;
+    margin-top: 10px;
 }
 /* regole container generale  */
 
@@ -32,19 +33,27 @@ body{
 
 /* regole card */
 .card {
-    flex: 1 0 calc(30%); 
+    display: flex;
+    justify-content: center;
+    width: calc(100% / 3); 
     text-align: center;
-    margin-bottom: 10px;
-    
+    margin-bottom: 2em;
+   
    
 }
-.card div {
-    margin: 10px 0;
+.card span {
+    margin: 5px 0;
+    display: block;
+    
     
    
 }
 .card img {
     max-width: 300px;
-    
+   
   
+}
+
+.text-container{
+    background-color: #F5F5F1;
 }

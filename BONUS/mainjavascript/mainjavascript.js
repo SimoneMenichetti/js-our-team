@@ -60,10 +60,11 @@
 
             cardMembro.innerHTML = 
             // Trasformare la stringa dell immagine in un immagine effettiva 
-            `
-            <img src="${membro.foto}" alt="Foto di ${membro.nome}">
-            <div></strong> ${membro.nome}</div>
-            <div>${membro.ruolo}</div>`;
+                `<div class="text-container">
+                    <img src="${membro.foto}" alt="Foto di ${membro.nome}">
+                    <span> ${ membro.nome}</span>
+                    <span> ${ membro.ruolo}</span>
+                </div>`;
                 
                 // [*BONUS p4]
                 teamContainer.append(cardMembro);
