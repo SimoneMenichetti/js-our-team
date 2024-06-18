@@ -53,7 +53,7 @@
     // utilizziamo un ciclo for per iterare nell'array creato in precedenza per i membri e stampare le informazioni di ogni membro del team 
 
     // [* miles 2 p1]
-        const teamContainer = document.querySelector('.team-container');
+        const teamContainer = document.getElementById('team-container');
 
         for(let i = 0 ; i< membriTeam.length;i++) {
             // verifichiamo in console le informazioni per ogni membro
@@ -74,13 +74,6 @@
         
 
 
-                    //         MILESTONE 2:
-        // Stampare le stesse informazioni su DOM sottoforma di stringhe
+                    //         MILESTONE BONUS:
 
-                                    // passaggi
-
-            // creazione di un elemento di riferimento nell html e richiamiamolo prima del ciclo for [* miles 2 p1]
-
-            // creazione degli elementi da inserire nel dom all'interno del team container  [* miles 2 p2]
-
-            // Stampare le stesse informazioni su DOM sottoforma di stringhe [* miles 2 p end]
+        // Trasformare la stringa dell immagine in un immagine effettiva 
